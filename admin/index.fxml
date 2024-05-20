@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="rootPane" prefHeight="398.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.admin.ControllerIndex">
+   <children>
+      <Button fx:id="adminButton" layoutX="207.0" layoutY="119.0" mnemonicParsing="false" onAction="#ovrirCreationUnGestionnaire" prefHeight="25.0" prefWidth="255.0" text="Ajouter un gestionnaire" />
+      <Button layoutX="208.0" layoutY="173.0" mnemonicParsing="false" onAction="#voirGestionnaires" prefHeight="25.0" prefWidth="255.0" text="Voir / Modifier / Supprimer un Gestionnaire" />
+      <Text layoutX="272.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonjour Administrateur" />
+      <Button onAction="#quitter" layoutX="207.0" layoutY="285.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="255.0" text="Quitter mode administrateur" />
+   </children>
+</AnchorPane>
