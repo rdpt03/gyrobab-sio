@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.gestionnaire.marqueGyropodes.ControllerMenuMarqueGyropodes">
+   <TableView fx:id="tableView" layoutX="32.0" layoutY="32.0" prefHeight="336.0" prefWidth="802.0">
+      <columns>
+         <TableColumn fx:id="nom" prefWidth="112.0" text="Nom de la marque" />
+         <TableColumn fx:id="siteWeb" prefWidth="87.0" text="Site web" />
+         <TableColumn fx:id="nomCommercial" prefWidth="108.0" text="Nom commercial" />
+         <TableColumn fx:id="telCommercial" prefWidth="135.0" text="Telephone commercial" />
+         <TableColumn fx:id="mailCommercial" prefWidth="100.0" text="Mail commercial" />
+         <TableColumn fx:id="nomSAV" prefWidth="76.0" text="Nom SAV" />
+         <TableColumn fx:id="telSAV" prefWidth="99.0" text="Telephone SAV" />
+         <TableColumn fx:id="mailSAV" prefWidth="84.0" text="Mail SAV" />
+      </columns>
+   </TableView>
+   <Button layoutX="305.0" layoutY="376.0" mnemonicParsing="false" onAction="#ajouterMarqueGyropode" text="Ajouter" />
+   <Button layoutX="496.0" layoutY="376.0" mnemonicParsing="false" onAction="#modifierMarqueGyropode" text="Modifier" />
+   <Button layoutX="397.0" layoutY="376.0" mnemonicParsing="false" onAction="#removeMarqueGyropode" text="Supprimer" />
+   <Button layoutX="405.0" layoutY="462.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+</AnchorPane>

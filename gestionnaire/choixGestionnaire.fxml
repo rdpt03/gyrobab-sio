@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="rootPane" prefHeight="398.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.gestionnaire.ControllerChoixGestionnaire">
+   <children>
+      <Text layoutX="242.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez entrer le nom d'utilisateur." />
+      <TextField fx:id="user" layoutX="259.0" layoutY="160.0" promptText="Nom d'utilisateur" />
+      <Label fx:id="erreur" layoutX="59.0" layoutY="286.0" prefHeight="17.0" prefWidth="549.0" textAlignment="CENTER" textFill="RED" wrapText="true" />
+      <Button fx:id="creer" layoutX="253.0" layoutY="199.0" mnemonicParsing="false" onAction="#entrerDansLeCompte" prefHeight="25.0" prefWidth="161.0" text="Entrer" />
+      <Button fx:id="creer1" layoutX="253.0" layoutY="342.0" mnemonicParsing="false" onAction="#retourALaPage" prefHeight="25.0" prefWidth="161.0" text="Annuler" />
+   </children>
+</AnchorPane>

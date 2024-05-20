@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="rootPane" prefHeight="398.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.gestionnaire.marqueGyropodes.ControllerModifierMarqueGyropode">
+   <children>
+      <Text layoutX="221.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez inserer les donnés de l'usager" />
+      <TextField fx:id="nomForm" layoutX="170.0" layoutY="98.0" promptText="Nom Marque" />
+      <TextField fx:id="siteWebForm" layoutX="348.0" layoutY="98.0" promptText="Site web" />
+      <TextField fx:id="nomCommercialForm" layoutX="170.0" layoutY="137.0" promptText="Nom commercial" />
+      <TextField fx:id="telCommercialForm" layoutX="170.0" layoutY="179.0" promptText="Telephone Commercial" />
+      <TextField fx:id="mailCommercialForm" layoutX="170.0" layoutY="216.0" promptText="Mail Commercial" />
+      <TextField fx:id="nomSAVForm" layoutX="348.0" layoutY="137.0" promptText="Nom SAV" />
+      <TextField fx:id="telSAVForm" layoutX="348.0" layoutY="179.0" promptText="Telephone SAV" />
+      <TextField fx:id="mailSAVForm" layoutX="348.0" layoutY="216.0" promptText="Mail SAV" />
+
+      <Label fx:id="erreur" layoutX="59.0" layoutY="286.0" prefHeight="17.0" prefWidth="549.0" textAlignment="CENTER" textFill="RED" wrapText="true" />
+      <Button layoutX="253.0" layoutY="309.0" mnemonicParsing="false" onAction="#modifierUneMarqueGyropode" prefHeight="25.0" prefWidth="161.0" text="Modifier" />
+      <Button layoutX="253.0" layoutY="342.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="161.0" text="Retour" />
+   </children>
+</AnchorPane>

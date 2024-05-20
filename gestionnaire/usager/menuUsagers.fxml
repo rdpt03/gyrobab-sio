@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.gestionnaire.usager.ControllerMenuUsagers">
+   <TableView fx:id="tableView" layoutX="32.0" layoutY="32.0" prefHeight="336.0" prefWidth="802.0">
+      <columns>
+         <TableColumn fx:id="prenom" text="Prenom" />
+         <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+         <TableColumn fx:id="nomUtilisateur" prefWidth="125.0" text="Nom d'Utilisateur" />
+         <TableColumn fx:id="mail" prefWidth="153.0" text="Mail" />
+         <TableColumn fx:id="dateDeNaissance" prefWidth="108.0" text="Date de naissance" />
+         <TableColumn fx:id="nPieceIdenite" prefWidth="102.0" text="Numero de Piece d'identité" />
+         <TableColumn fx:id="typePieceIdentite" prefWidth="156.0" text="Type de piece d'identité" />
+      </columns>
+   </TableView>
+   <Button layoutX="305.0" layoutY="376.0" mnemonicParsing="false" onAction="#ajouterUsager" text="Ajouter" />
+   <Button layoutX="496.0" layoutY="376.0" mnemonicParsing="false" onAction="#modifierUsager" text="Modifier" />
+   <Button layoutX="397.0" layoutY="376.0" mnemonicParsing="false" onAction="#removeUsager" text="Supprimer" />
+   <Button layoutX="405.0" layoutY="462.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+</AnchorPane>

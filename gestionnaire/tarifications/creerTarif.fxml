@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane id="rootPane" prefHeight="398.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.gestionnaire.tarifications.ControllerCreerTarif">
+   <children>
+      <Text layoutX="221.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez inserer les donnés de l'usager" />
+      <ComboBox fx:id="saisonForm" layoutX="259.0" layoutY="89.0" promptText="Saison" />
+      <TextField fx:id="prixForm" layoutX="345.0" layoutY="145.0" promptText="prix" />
+
+      <Label fx:id="erreur" layoutX="59.0" layoutY="286.0" prefHeight="17.0" prefWidth="549.0" textAlignment="CENTER" textFill="RED" wrapText="true" />
+      <Button layoutX="253.0" layoutY="309.0" mnemonicParsing="false" onAction="#creerUneTarif" prefHeight="25.0" prefWidth="161.0" text="Ajouter" />
+      <Button layoutX="253.0" layoutY="342.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="161.0" text="Annuler" />
+   </children>
+</AnchorPane>

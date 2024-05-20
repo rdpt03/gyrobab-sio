@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.gestionnaire.saisons.ControllerMenuSaisons">
+   <TableView fx:id="tableView" layoutX="32.0" layoutY="32.0" prefHeight="336.0" prefWidth="802.0">
+      <columns>
+         <TableColumn fx:id="libelleSaisons" prefWidth="258.0" text="Saison" />
+         <TableColumn fx:id="dateDebut" minWidth="0.0" prefWidth="278.0" text="Date de Debut" />
+         <TableColumn fx:id="dateFin" minWidth="0.0" prefWidth="265.0" text="Date de Fin" />
+      </columns>
+   </TableView>
+   <Button layoutX="305.0" layoutY="376.0" mnemonicParsing="false" onAction="#ajouterSaison" text="Ajouter" />
+   <Button layoutX="496.0" layoutY="376.0" mnemonicParsing="false" onAction="#modifierSaison" text="Modifier" />
+   <Button layoutX="397.0" layoutY="376.0" mnemonicParsing="false" onAction="#removeSaison" text="Supprimer" />
+   <Button layoutX="405.0" layoutY="462.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+</AnchorPane>
