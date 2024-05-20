@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="rootPane" prefHeight="398.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyrobab.ControllerIndex">
+   <children>
+      <Button layoutX="230.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Entrer comme Utilsateur" />
+      <Button onAction="#openGestMenu" fx:id="gestButton" layoutX="230.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Entrer comme gestionnaire" />
+      <Button onAction="#openAdminMenu" fx:id="adminButton" layoutX="230.0" layoutY="302.0" mnemonicParsing="false" text="Entrer comme Administrateur" />
+      <Text layoutX="253.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenu dans GyroBAB" />
+   </children>
+</AnchorPane>
